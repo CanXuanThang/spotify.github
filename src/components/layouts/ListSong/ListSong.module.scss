@@ -1,0 +1,50 @@
+.wrapper {
+    width: calc(100% * 2 / 3);
+    background-color: #1e293b;
+    overflow: hidden;
+    height: 75vh;
+    overflow-y: scroll;
+
+    & > table {
+        width: 100%;
+    }
+}
+
+.menu {
+    background-color: #334155;
+    width: 100%;
+
+    & > th {
+        color: #fff;
+        font-size: 16px;
+    }
+}
+
+.list-song {
+    height: 48px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #475569;
+    }
+
+    & > td {
+        font-size: 16px;
+        color: #a3a3a3;
+    }
+
+    & > td:nth-child(1),
+    > td:nth-child(3),
+    > td:nth-child(4) {
+        text-align: center;
+    }
+
+    & > td > a {
+        color: #a3a3a3;
+    }
+}
+
+.active > td {
+    color: #5eead4;
+    background-color: #475569;
+}
